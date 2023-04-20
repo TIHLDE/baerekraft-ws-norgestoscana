@@ -5,7 +5,6 @@ export const About = () => {
   return (
     <section id="about">
       <h1>About us</h1>
-      <Logo className={styles.logo} />
       <p>
         Our company is a leading provider of digital services. We specialize in
         developing innovative solutions that help businesses streamline their

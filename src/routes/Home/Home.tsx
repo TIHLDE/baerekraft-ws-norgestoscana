@@ -1,14 +1,14 @@
 import { Logo } from "../../components/Logo";
 import styles from "./Home.module.css";
+import { About } from "../About/About";
+import { Services } from "../Services/Services";
 
-import service1Video from "../../assets/serviceImages/service1.mp4";
-import service2Image from "../../assets/serviceImages/service2.jpg";
-import service3Image from "../../assets/serviceImages/service3.jpg";
+import service1Image from "../../assets/serviceImages/service1-2.jpg"
 
 export const Home = () => {
   return (
     <>
-      <section id="about">
+      <section id="home">
         <Logo className={styles.logo} />
         <p>
           Our company is a leading provider of digital services. We specialize
@@ -18,57 +18,15 @@ export const Home = () => {
           dedicated to staying on the cutting edge of new developments and
           trends.
         </p>
+        <img
+            src={service1Image}
+            alt="Automation platform"
+            className={styles.serviceImage}
+        />
       </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>
-            <h3>Automation platform</h3>
-            <video className={styles.serviceImage} autoPlay loop muted>
-              <source src={service1Video} type="video/mp4" />
-            </video>
-            <p>
-              Our automation platform is a cloud-based automation solution that
-              helps businesses automate repetitive tasks and processes. With
-              this service, you can easily automate tasks such as data entry,
-              scheduling, and more. Additionally, you can also set up custom
-              workflows and integrations with other tools you use.
-            </p>
-          </li>
-          <li>
-            <h3>Advanced analytics</h3>
-            <img
-              src={service2Image}
-              alt="Advanced analytics"
-              className={styles.serviceImage}
-            />
-            <p>
-              Our advanced analytics solution helps businesses gain insights
-              from their data. With this service, you can easily track key
-              performance indicators, create custom reports, and visualize data
-              in a variety of formats. Additionally, you can also set up
-              automated alerts and notifications to keep you informed of
-              important trends.
-            </p>
-          </li>
-          <li>
-            <h3>Cybersecurity Service</h3>
-            <img
-              src={service3Image}
-              alt="Cybersecurity Service"
-              className={styles.serviceImage}
-            />
-            <p>
-              Our cybersecurity Service helps businesses protect their data and
-              systems from cyber threats. With this service, you can easily
-              monitor your network for potential threats, and respond quickly to
-              any incidents. Additionally, you can also set up automated
-              security protocols and access controls to ensure that your data
-              stays safe and secure.
-            </p>
-          </li>
-        </ul>
-      </section>
+
+      <About />
+      <Services />
     </>
   );
 };
