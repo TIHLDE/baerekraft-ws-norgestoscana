@@ -4,10 +4,10 @@
 }
 
 :root {
-  --primaryColor: #ba3b0a;
+  --primaryColor: #fff;
   --secondaryColor: #e8772e;
   --accentColor: #e8772e;
-  --backgroundColor: #ffbe79;
+  --backgroundColor: #111827;
   --linkActiveColor: #535bf2;
 
   font-family: sans-serif;
