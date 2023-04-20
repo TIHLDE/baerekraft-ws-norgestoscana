@@ -6,7 +6,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home, About, Services } from "./routes";
 import reportWebVitals from "./reportWebVitals";
-import { ContactUs } from "./routes/ContactUs/ContactUs";
 
 const router = createBrowserRouter(
   [
@@ -17,7 +16,6 @@ const router = createBrowserRouter(
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
         { path: "/services", element: <Services /> },
-        { path: "/contact-us", element: <ContactUs /> },
       ],
     },
   ],
