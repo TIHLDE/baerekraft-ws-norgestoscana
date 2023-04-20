@@ -66,3 +66,14 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 500px;
+    min-height: 100vh;
+  }
+}
